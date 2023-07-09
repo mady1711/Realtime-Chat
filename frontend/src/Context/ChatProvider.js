@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import {useHistory } from  "react-router-dom";
 
 const ChatContext = createContext();
 
@@ -15,9 +15,9 @@ const ChatProvider = ({children}) => {
         const userInfo = JSON.parse(localStorage.getItem("userInfo"));
         setUser(userInfo);
 
-        if(!userInfo){
-            history.push("/");
-        }
+        if(!userInfo) history.push('/')
+        //eslint-disable-next-line react-hooks/exhaustive-deps
+        
     }, [history]);
 
     return (
