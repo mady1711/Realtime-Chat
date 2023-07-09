@@ -24,7 +24,7 @@ const MyChats = (fetchAgain) => {
       };
 
       const { data } = await axios.get("/api/chat", config);
-      console.log(data);
+      // console.log(data);
 
       setChats(data);
     } catch (error) {
@@ -84,7 +84,7 @@ const MyChats = (fetchAgain) => {
         p={3}
         bg="#F8F8F8"
         w="100%"
-        h="100%"
+        h="90%"
         borderRadius="lg"
         overflowY="hidden"
       >
