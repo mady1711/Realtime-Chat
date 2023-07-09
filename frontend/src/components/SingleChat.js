@@ -8,6 +8,7 @@ import ProfileModal from './miscellaneous/ProfileModal';
 import UpdateGroupChatModal from './miscellaneous/UpdateGroupChatModal';
 import axios from 'axios';
 import './styles.css';
+import ScrollableChat from './ScrollableChat';
 
 const SingleChat = ({fetchAgain ,setFetchAgain}) => {
 
@@ -153,7 +154,7 @@ const SingleChat = ({fetchAgain ,setFetchAgain}) => {
                     <Spinner/>
                 ):(
                     <div className="messages">
-                        {/* Messages */}
+                        <ScrollableChat messages={messages}/>
                     </div>
                 )}
 

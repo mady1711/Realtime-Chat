@@ -8,7 +8,7 @@ import { useHistory } from 'react-router-dom';
 import { useDisclosure } from '@chakra-ui/react';
 import axios from 'axios';
 import ChatLoading from '../ChatLoading';
-import UserListItem from '../UserAvatar/UserListItem';
+import UserListItem from '../userAvatar/UserListItem';
 
 const SideDrawer = () => {
 
